@@ -4,12 +4,12 @@ public class Main {
         int balance = 455; // рублей
         int bonus = 100; // рублей
         int balanceRefill = 1155; // рублей
-        int x; // бонусных рублей
+        int totalBalance; // бонусных рублей
         if (balanceRefill > 1000) {
-            x = balanceRefill / bonus + balance + balanceRefill;
+            totalBalance = balanceRefill / bonus + balance + balanceRefill;
         } else {
-            x = balanceRefill + balance;
+            totalBalance = balanceRefill + balance;
         }
-        System.out.println("Рублей на счёте с учётом бонусов:" + x);
+        System.out.println("Рублей на счёте с учётом бонусов:" + totalBalance);
     }
 }
